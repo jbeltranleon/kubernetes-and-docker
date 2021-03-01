@@ -15,5 +15,7 @@ RUN npm install
 EXPOSE 80
 
 # Execute the command node with the app file as arg
-# node app.mjs
+# node server.js
+# The difference to run is that this will now not be executed
+# when the image is created, but when a container is started based on the image.
 CMD [ "node", "server.js" ]
