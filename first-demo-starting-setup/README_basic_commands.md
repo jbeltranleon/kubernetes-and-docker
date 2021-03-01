@@ -7,4 +7,6 @@
 
 > The exposed ports by the container with the `-p` label are sorted like: `<local-machine-port-to>:<container-port>`
 
-
+* To see the running containers: `docker ps`
+ 
+* To run an interactive sesion from inside a container to our hosting machine: `docker run -it <image>`eg: `docker run -it node` 
