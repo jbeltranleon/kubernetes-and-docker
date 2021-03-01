@@ -11,6 +11,7 @@ COPY . .
 # execute npm install to install al the dependencies required
 RUN npm install
 
+# EXPOSE is an optional instruction - only for documentation pourpose 
 # Expose the same port that the app expose
 EXPOSE 80
 
