@@ -24,6 +24,12 @@ Docker is a **container** technology: A tool for creating and managing container
 > Images are Read Only. **The image is a "snapshot" of the latest version of the code when the image was created.**
 
 
+### Layer based architecture
+
+whenever you build an image, Docker caches every instruction result, and when you then rebuild an image, it will use these cached results if there is no need to run an instruction again.
+
+> Every instruction into the Dockerfile is a layer. The **CMD** instruction is a layer that will only exist when the container is running.
+
 
 
 
