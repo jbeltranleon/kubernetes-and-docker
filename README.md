@@ -34,8 +34,10 @@ whenever you build an image, Docker caches every instruction result, and when yo
 
 If you try to remove an image while a container is using that image, you'll see an erro like this:
 
-```nodejs-app-starting-setup|main⚡ ⇒ docker rmi 2e6cc7c8b0ff
-Error response from daemon: conflict: unable to delete 2e6cc7c8b0ff (cannot be forced) - image is being used by running container ded9c8642876```
+```
+nodejs-app-starting-setup|main⚡ ⇒ docker rmi 2e6cc7c8b0ff
+Error response from daemon: conflict: unable to delete 2e6cc7c8b0ff (cannot be forced) - image is being used by running container ded9c8642876
+```
 
 
 
