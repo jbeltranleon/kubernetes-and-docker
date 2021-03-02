@@ -30,7 +30,12 @@ whenever you build an image, Docker caches every instruction result, and when yo
 
 > Every instruction into the Dockerfile is a layer. The **CMD** instruction is a layer that will only exist when the container is running.
 
+> The container uses the code stored into the image, the container doesn't create a new copy of the code
 
+If you try to remove an image while a container is using that image, you'll see an erro like this:
+
+```nodejs-app-starting-setup|main⚡ ⇒ docker rmi 2e6cc7c8b0ff
+Error response from daemon: conflict: unable to delete 2e6cc7c8b0ff (cannot be forced) - image is being used by running container ded9c8642876```
 
 
 
