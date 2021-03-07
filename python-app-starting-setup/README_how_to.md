@@ -6,3 +6,5 @@ To run this image into a container and be able to interact with the script we ne
 `docker run -i -t <cointainer-id>` or 
 `docker run -it <cointainer-id>` or even
 `docker run -ti <cointainer-id>`
+
+To start the container again and be able to interact with the script we could use: `docker start -a -i <cointainer-id>`
