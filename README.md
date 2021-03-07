@@ -39,6 +39,13 @@ nodejs-app-starting-setup|main⚡ ⇒ docker rmi 2e6cc7c8b0ff
 Error response from daemon: conflict: unable to delete 2e6cc7c8b0ff (cannot be forced) - image is being used by running container ded9c8642876
 ```
 
+### Attached and Dettached cointainers
+
+* `start` command on docker start a cointainer that already exist, this command will be executed in dettached mode on the terminal **by default**. Use the flag `-a` to execute it with the attached mode.
+
+* `run` command on docker create and run a new container based on an image, this command will be executed in attached mode on the terminal **by default**. Use the flag `-d` to execute it with the dettached mode.
+
+* We could attached our terminal to a running container executing: `docker attach <cointainer-id>`
 
 
 
