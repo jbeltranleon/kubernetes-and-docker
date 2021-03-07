@@ -13,3 +13,9 @@
 * To see all the containers: `docker ps -a`
 * To start stopped container: `docker start <cointainer-id/cointainer-name>`
 * To see the logs of an specific container: `docker logs <cointainer-id>`. If we want to see all the future logs we could use the `-f` flag.
+* To delete a stoped container: `docker rm <docker-id>`, we could pass more that one container separated by space.
+* To list all the images: `docker images`
+* To delete a image that is'n in use: `docker rmi <image-id>`, we could pass more that one image separated by space.
+* To remove all unused images: `docker image prune` 
+* To remove all the stoped containers: `docker container rm $(docker ps --filter "status=exited" -q)` 
+* Remove automatically an unused container: `docker run --rm <container-id>`
