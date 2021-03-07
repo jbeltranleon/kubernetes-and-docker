@@ -22,3 +22,5 @@
 * Get information from an image: `docker image inspect <image-id>`
 * Copy all files from a local folder into an a container: `docker cp folder/. <container-id>:/folder_into_container`
 * Copy all files from a container folder into an a local folder: `docker cp <container-id>:/folder_into_container folder`
+* Name and tag (could be the version) an image: `docker build -t <name>:<tag> .`
+* Name a container: `docker run --name <custom-name> <container-id>`
