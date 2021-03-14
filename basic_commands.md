@@ -24,3 +24,9 @@
 * Copy all files from a container folder into an a local folder: `docker cp <container-id>:/folder_into_container folder`
 * Name and tag (could be the version) an image: `docker build -t <name>:<tag> .`
 * Name a container: `docker run --name <custom-name> <container-id>`
+* Push image to Dockerhub: `docker push <image_id>`
+* Pull image to Dockerhub: `docker push <image_id>`
+* Push image to private registry: `docker push <image_id> <host>:<name>`
+* Pull image to private registry: `docker push <image_id> <host>:<name>`
+* Re-tag images: `docker tag local-image:tagname new-repo:tagname`
+* Docker Hub recomend when you create a repository the next command: `docker push jhonbeltran/node-hello-world:tagname`
