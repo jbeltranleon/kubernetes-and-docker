@@ -1,7 +1,7 @@
 # Basic Docker CLI Commands
 
 * Build the image: `docker build .`
-* Run the image as a container: `docker run -p 3000:3000 <image-id>`
+* Run the image as a container: `docker run -p <machine-port>:<container-port> <image-id>`
 * Use the -d option start a detached container `docker run -p 3000:3000 -d <image-id>` this will "liberate" the terminal and keep running the container in the background
 * Stop the container: `docker stop <containers-name or containers-id>`
 
